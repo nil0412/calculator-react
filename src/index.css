@@ -1,13 +1,79 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+}
+
+.App {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.calculator-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 100px;
+	width: 500px;
+	border: 5px solid black;
+}
+
+.display {
+	height: 100px;
+	width: 100%;
+	border-bottom: 5px solid black;
+  /* background-color: grey; */
+  /* color: white; */
+  
+}
+
+.display input{
+  width: 100%;
+  height: inherit;
+  font-size: 40px;
+  border: none;
+  background-color: none;
+  margin: 0;
+  padding: 0;
+  overflow-wrap: break-word;
+  text-align: right;
+  background-color: gray;
+  color: white;
+}
+
+.calculator-btns {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.button-row {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.button-row button {
+	width: 25%;
+	height: 80px;
+  font-size: 30px;
+  font-weight: bold;
+  /* background-color: antiquewhite; */
+}
+.operator{
+  background-color: orange;
 }
